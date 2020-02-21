@@ -9,7 +9,8 @@ while True:
     userinpt = selection + 1
     while userinpt == 0 or userinpt >= selection:
         if count == 3:
-            print("He's not the Messiah. He's a very naughty boy")
+            ## Testing comments and changes
+            print("The Messiah comes")
             time.sleep(3)
             sys.exit()
         count += 1
