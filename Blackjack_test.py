@@ -1,6 +1,6 @@
 import pytest
 import Blackjack
-
+#lol
 def test_deal():
     assert Blackjack.deal([2,2,2,2,2,2,2,2,2,2,2,2,2,2]*4)==[2,2]
 
