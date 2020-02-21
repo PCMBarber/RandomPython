@@ -1,5 +1,5 @@
 import math
-num1 = 1
+num1 = 22
 num2 = 1
 operator = ""
 answer = 0
