@@ -7,3 +7,5 @@ c = "ccc"
 
 final = a + b + c
 print(final)
+
+##a simple code
