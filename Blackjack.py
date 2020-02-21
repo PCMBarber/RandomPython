@@ -8,7 +8,7 @@ def deal(deck): #function for dealing 2 cards to player and dealer at start
     for i in range(2): #2 times loop
         random.shuffle(deck)
         card = deck.pop() #pulls one value out of deck array
-        if card == 11:
+        if card == 14:
             card = "J"
         if card == 12:
             card = "Q"
