@@ -168,6 +168,8 @@ def game():
             while total(dealer_hand) < 17: #dealer must hit to 16
                 hit(dealer_hand)
             score(dealer_hand, player_hand)
+            print
+            
             play_again()
         elif choice == "q":
                 print ("Bye!")
