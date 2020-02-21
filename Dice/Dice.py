@@ -7,3 +7,4 @@ def throw():
         results.append(num)
 
     return results
+# adding practice
