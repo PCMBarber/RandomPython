@@ -138,3 +138,5 @@ def clear():      #Clears screen on linux or windows
 
 if __name__ == "__main__":
     main()
+
+    ##figuring this out
