@@ -3,7 +3,7 @@ import sys
 import random
 
 count = 0
-print("You must choose. But choose wisely. For as the True Grail will bring you life -- the False Grail will take it from you.")
+print("You must choose! But choose wisely. For as the True Grail will bring you life -- the False Grail will take it from you.")
 while True:
     selection = random.randint(5,10)
     userinpt = selection + 1
