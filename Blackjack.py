@@ -55,20 +55,8 @@ def total(hand): #quick maths
                 total+= 1
             else:
                 total += 11
-        elif ace_count == 2:
-            for i in range(2):
-                if total >= 11:
-                    total+= 1
-                else:
-                    total += 11
-        elif ace_count == 3:
-            for i in range(3):
-                if total >= 11:
-                    total+= 1
-                else:
-                    total += 11
-        elif ace_count == 4:
-            for i in range(4):
+        elif ace_count > 1:
+            for i in range(ace_count):
                 if total >= 11:
                     total+= 1
                 else:
