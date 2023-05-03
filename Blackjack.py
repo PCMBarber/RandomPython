@@ -86,8 +86,8 @@ def clear():
 
 def print_results(dealer_hand, player_hand):
     clear()
-    print ("The dealer has a " + str(dealer_hand) + " for a total of " + str(total(dealer_hand)))
-    print ("You have a " + str(player_hand) + " for a total of " + str(total(player_hand)))
+    print("The dealer has a " + str(dealer_hand) + " for a total of " + str(total(dealer_hand)))
+    print("You have a " + str(player_hand) + " for a total of " + str(total(player_hand)))
 
 def blackjack(dealer_hand, player_hand): #checks for blackjack
     if total(player_hand) == 21:
@@ -141,7 +141,7 @@ def game():
     dealer_hand = deal(deck) #generates starting hands
     player_hand = deal(deck)
     while choice != "q":
-        print("The dealer is showing a " + str(dealer_hand[0])) #shows first card in dealers hand
+        print("The dealer is showing a " + str(dealer_hand[0] + ". The dealer cannot stand on less than a 16")) #shows first card in dealers hand
         print("You have a " + str(player_hand) + " for a total of " + str(total(player_hand)))
         blackjack(dealer_hand, player_hand) #checks for blackjack
         choice = input("Do you want to [H]it, [S]tand, or [Q]uit: ").lower()
@@ -153,8 +153,11 @@ def game():
                 print("Sorry. You busted. You lose.\n")
                 play_again()
         elif choice == "s":
+            print_results(dealer_hand, player_hand)
             while total(dealer_hand) < 17: #dealer must hit to 16
                 hit(dealer_hand)
+                print("The dealer hits, now showing " + str(dealer_hand))
+            print("The dealer must stand on 17")
             score(dealer_hand, player_hand)
             play_again()
         elif choice == "q":
